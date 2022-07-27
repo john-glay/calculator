@@ -5,39 +5,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>calculator</title>
 </head>
 
-<body>
+<body class="mx-auto vh-100 w-100 d-flex align-items-center justify-content-center">
 
-    <div class="container">
-        <div class="calculator">
-            <input type="text" class="calculator-screen" placeholder="0">
-            <div class="calculator-keys">
-                <button type="button" value="all-clear" class="light">AC</button>
-                <button type="button" value="+/-" class="light">+/-</button>
-                <button type="button" value="%" class="light">%</button>
-                <button type="button" value="/" class="yellow">&divide;</button>
-                <button type="button" value="7" class="dark">7</button>
-                <button type="button" value="8" class="dark">8</button>
-                <button type="button" value="9" class="dark">9</button>
-                <button type="button" value="*" class="yellow">&times;</button>
-                <button type="button" value="4" class="dark">4</button>
-                <button type="button" value="5" class="dark">5</button>
-                <button type="button" value="6" class="dark">6</button>
-                <button type="button" value="*" class="yellow">-</button>
-                <button type="button" value="1" class="dark">1</button>
-                <button type="button" value="2" class="dark">2</button>
-                <button type="button" value="3" class="dark">3</button>
-                <button type="button" value="+" class="yellow">+</button>
-                <button type="button" value="0" class="dark zero">0</button>
-                <button type="button" value="." class="dark">.</button>
-                <button type="button" value="=" class="yellow">=</button>
+    <div id="calculator" class="rounded shadow-lg">
+        <div class="container">
+            <div class="row g-2">
+                <div class="col-12">
+                    <input type="text" placeholder="0" class="fs-1 text-end text-white bg-black border border-0 w-100 px-4">
+                </div>
+                <div class="col-3">
+                    <div class="button fs-5 fw-bold text-bg-secondary text-center rounded-circle">AC</div>
+                </div>
+                <div class="col-3">
+                    <div class="button fs-5 fw-bold text-bg-secondary text-center rounded-circle">±</div>
+                </div>
+                <div class="col-3">
+                    <div class="button fs-5 fw-bold text-bg-secondary text-center rounded-circle">%</div>
+                </div>
+                <div class="col-3">
+                    <div class="button fs-5 fw-bold text-bg-warning text-center rounded-circle">&divide;</div>
+                </div>
+                <div class="col-3">
+                    <div class="button fs-5 fw-bold text-bg-dark text-center rounded-circle">7</div>
+                </div>
+                <div class="col-3">
+                    <div class="button fs-5 fw-bold text-bg-dark text-center rounded-circle">8</div>
+                </div>
+                <div class="col-3">
+                    <div class="button fs-5 fw-bold text-bg-dark text-center rounded-circle">9</div>
+                </div>
+                <div class="col-3">
+                    <div class="button fs-5 fw-bold text-bg-warning text-center rounded-circle">&times;</div>
+                </div>
+                <div class="col-3">
+                    <div class="button fs-5 fw-bold text-bg-dark text-center rounded-circle">4</div>
+                </div>
+                <div class="col-3">
+                    <div class="button fs-5 fw-bold text-bg-dark text-center rounded-circle">5</div>
+                </div>
+                <div class="col-3">
+                    <div class="button fs-5 fw-bold text-bg-dark text-center rounded-circle">6</div>
+                </div>
+                <div class="col-3">
+                    <div class="button fs-5 fw-bold text-bg-warning text-center rounded-circle">-</div>
+                </div>
+                <div class="col-3">
+                    <div class="button fs-5 fw-bold text-bg-dark text-center rounded-circle">1</div>
+                </div>
+                <div class="col-3">
+                    <div class="button fs-5 fw-bold text-bg-dark text-center rounded-circle">2</div>
+                </div>
+                <div class="col-3">
+                    <div class="button fs-5 fw-bold text-bg-dark text-center rounded-circle">3</div>
+                </div>
+                <div class="col-3">
+                    <div class="button fs-5 fw-bold text-bg-warning text-center rounded-circle">+</div>
+                </div>
+                <div class="col-6">
+                    <div class="button fs-5 fw-bold text-bg-dark text-center rounded-pill">0</div>
+                </div>
+                <div class="col-3">
+                    <div class="button fs-5 fw-bold text-bg-dark text-center rounded-circle">.</div>
+                </div>
+                <div class="col-3">
+                    <div class="button fs-5 fw-bold text-bg-warning text-center rounded-circle">=</div>
+                </div>
             </div>
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
